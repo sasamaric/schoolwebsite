@@ -1,0 +1,604 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+header {
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.5)), url("../images/zgrada.jpg");
+    height: 800px;
+    background-size: cover;
+    text-align: center;
+    
+}
+.logo {
+    color:#fff;
+    font-family: 'Caveat', cursive;
+    font-size: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+    
+    
+}
+.nav-menu {
+    list-style: none;
+    color:#fff;
+   
+    
+}
+.nav-menu li {
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    
+}
+.nav-menu li a{
+    text-decoration:none;
+    color:#fff;  
+    padding-left: 10px;
+    padding-right: 10px; 
+    transition: color 0.3s ease-in-out; 
+}
+.nav-menu li a:hover{
+    color: #F2AC32;
+}
+.header-title-1{
+    color: #F2AC32;
+    font-size: 44px;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 170px;
+    margin-bottom: 15px;
+    letter-spacing: 5px;
+}
+.header-title-2{
+    font-family: 'Caveat', cursive;
+    color: #fff;
+    font-size: 55px;
+    letter-spacing: 6px;
+    margin-bottom: 15px;
+}
+.header-title-12{
+    color: #F2AC32;
+    font-size: 44px;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 30px;
+    letter-spacing: 5px;
+}
+.header-cta-button{
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    background-color: #F2AC32;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 1px;
+    border:none;
+    cursor: pointer;
+    
+}
+.header-cta-button:hover{
+    background-color: rgb(196, 137, 36);
+
+}
+/***********************************modal content**************************************/
+.modal{
+    display:none;
+    position: fixed;
+    z-index: 1;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content{
+    margin: 10% auto;
+    padding:20px;
+    width:70%;
+    animation-name:modalopen;
+    animation-duration: 1s;
+}
+.closeBtn{
+    color:#fff;
+    float:right;
+    font-size: 20px;
+}
+.closeBtn:hover, .closeBtn:focus{
+    color:#000;
+    text-decoration: none;
+    cursor:pointer;
+}
+@keyframes modalopen{
+    from{opacity: 0}
+    to{opacity: 1}
+}
+/**********************end of modal contetnt*******************************/
+.face{
+    font-size:18px;
+    margin-left:10px;
+    margin-right:10px;
+}
+.insta{
+    font-size: 19px;
+}
+/******************istorijat******************************/
+.istorijat{
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+.okvir{
+    border: 2px solid  #F2AC32; 
+    position: relative;
+}
+.prelaz{
+    padding:100px 10px 0 10px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: -18px -9px 28px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: -18px -9px 28px -2px rgba(0,0,0,0.75);
+    box-shadow: -18px -9px 28px -2px rgba(0,0,0,0.75);
+}
+
+.istorija{
+    height: 400px;
+    width: 270px;    
+    margin-left:20px;
+    margin-right:20px;    
+    text-align: center;
+    }
+.istorija p {
+    color:rgb(99, 99, 99);
+    font-size:16px;
+    margin-bottom: 20px;
+
+}
+.istorija a{
+    font-size:16px;
+    text-decoration: none;
+    color: #F2AC32;
+    font-family: 'Oswald', sans-serif;
+}
+
+.slika-1{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/slika-1.jpg");
+    background-size: cover;
+    margin-top:-30px;
+    -webkit-box-shadow: -18px -9px 28px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: -18px -9px 28px -2px rgba(0,0,0,0.75);
+    box-shadow: -18px -9px 28px -2px rgba(0,0,0,0.75);
+}
+.slika-2{
+    background-image: url("../images/slika-2.jpg");
+    background-size: cover;
+    -webkit-box-shadow: -18px -9px 28px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: -18px -9px 28px -2px rgba(0,0,0,0.75);
+    box-shadow: -18px -9px 28px -2px rgba(0,0,0,0.75);
+    
+}
+.dobrodosli{
+    font-family: 'Caveat', cursive;
+    color: #F2AC32;
+    margin-bottom: 15px;
+}
+.nasa-prica{
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+/******************istorijat(kraj)******************************/
+
+/******************aktuelnosti******************************/
+.aktuelnosti{
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url("../images/aktuelnosti-back.jpg");
+    background-size: cover;
+    padding-top:100px;
+    padding-bottom:100px;
+    text-align: center;
+}
+.aktuelnosti-h1{
+    font-family: 'Caveat', cursive;
+    color: #F2AC32;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+.aktuelnosti-h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin-bottom: 100px;
+    color:#fff;
+}
+.aktuelnosti-middle{
+    text-align:center;
+    position: relative;
+    padding-bottom: 50px;
+}
+.aktuelnosti-row{
+    display:flex;
+    justify-content: center;
+
+}
+.aktuelnosti-image1,
+.aktuelnosti-image2,
+.aktuelnosti-image3{
+    width:100%;
+    height: 300px;
+    margin-bottom:30px;
+    position:relative;
+    transition:all 0.5s ease-in-out;
+    cursor:pointer;
+}
+.aktuelnosti-col{
+    width:350px;
+    margin-right:20px;
+    margin-left:20px;
+}
+.aktuelnosti-image1{
+    background-image: url("../images/raspored.jpg");
+    background-size: cover;
+}
+.aktuelnosti-image1:hover .aktuelnosti-overlay,
+.aktuelnosti-image2:hover .aktuelnosti-overlay,
+.aktuelnosti-image3:hover .aktuelnosti-overlay{
+    opacity: 1;
+
+}
+.aktuelnosti-image2{
+    background-image: url("../images/cestitka.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.aktuelnosti-image3{
+    background-image: url("../images/izvjestaj-o-upisu.jpg");
+    background-size: cover;
+}
+.aktuelnosti-h3{
+    font-size:25px;
+    font-family: 'Oswald', sans-serif;
+    color:#fff;
+    letter-spacing: 2px;
+    margin-bottom:80px;
+
+}
+.aktuelnosti-overlay{
+    opacity:0;
+    position:absolute;
+    background-color: rgba(242, 172, 50, 0.7);
+    width:100%;
+    height:100%;
+    padding:10px;
+    transition:all 0.5s ease-in-out;
+}
+.aktuelnosti-overlay-border{
+    border:2px solid white;
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    color:white;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+.aktuelnosti-middle:before{
+    content:'';
+    position: absolute;
+    border-top: 100px solid #f0f0f0;
+    border-right:100vw solid transparent;
+    top:-100px;
+    left:0;
+}
+.aktuelnosti-middle:after{
+    content:'';
+    position: absolute;
+    border-bottom: 100px solid #f0f0f0;
+    border-left:100vw solid transparent;
+    bottom:-100px;
+    right:0;
+
+}
+/******************aktuelnosti (kraj)******************************/
+
+/******************struke*****************************************/
+
+.struke-section{
+    text-align: center;
+    background-color: #f0f0f0;
+    padding:50px;
+}
+.struke-container{
+    width:70%;
+    margin:0 auto;
+    display:flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.struke-h1{
+    font-family: 'Caveat', cursive;
+    color: #F2AC32; 
+    margin-bottom:15px;
+    font-size:40px;
+}
+.struke-h2{
+    font-family: 'Oswald', sans-serif;
+    color:#000;
+    margin-bottom: 50px;
+    font-size:50px;
+    letter-spacing: 2px;
+}
+.struke-h3{
+    width:100%;
+    font-family: 'Caveat', cursive;
+    font-size:22px;
+    letter-spacing: 2px;
+
+}
+.separator,
+.separator-orange{
+    display: inline-block;
+    width:40px;
+    border-bottom:2px solid white;
+    margin: 15px auto;
+
+}
+.struke-h4{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+    width:100%;
+}
+.struke-p{
+    font-family: 'Oswald', sans-serif;
+    font-size:14px;
+    padding:30px 20px;
+    width:100%;
+
+}
+
+.struke-col{
+    width: 50%;
+    display:flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.col-large{
+    width:50%;
+    height: 450px;
+    display:flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.col-large-1,
+.col-large-3{
+    background-color: #F2AC32;
+    color:#fff;
+    justify-content: center;
+}
+.fa-graduation-cap,
+.fa-tools{
+    width:100%;
+    font-size:50px;
+    margin-bottom: 10px;
+}
+.col-large-2{
+    background-image: url("../images/gimnazija.jpg");
+    background-size: cover;
+}
+.col-large-4{
+    background-image: url("../images/obucar.jpg");
+    background-size: cover;
+}
+.fa-laptop-code,
+.fa-cogs,
+.fa-laptop-medical,
+.fa-bolt{
+    color:#F2AC32;
+    font-size:50px;
+    width:100%;
+    margin-bottom: 10px;
+}
+.col-small{
+    width:50%;
+    height:225px;
+    display:flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.col-small-1{
+    background-color: #fff;
+}
+.col-small-2{
+    background-image:url("../images/informacione_tehnologije.jpg");
+    background-size:cover;
+    background-position: center;
+}
+.col-small-3{
+    background-image:url("../images/mehatronika.jpg");
+    background-size:cover;
+    background-position: center;
+}
+.col-small-4{
+    background-image:url("../images/tehnicar_racunarstva.jpg");
+    background-size:cover;
+    background-position: center;
+}
+.col-small-5{
+    background-image:url("../images/energetika.jpg");
+    background-size:cover;
+    background-position: center;
+}
+.col-small-h3{
+    font-family: 'Caveat', cursive;
+    font-size:22px;
+    letter-spacing: 2px;
+    width:100%;
+    color:#F2AC32;
+}
+.col-small-h4,
+.col-small-h5{
+    width:100%;
+    color:#000;
+    letter-spacing: 3px;
+    font-family: 'Oswald', sans-serif;
+}
+.col-small-h5{
+    color:#F2AC32;
+    margin-top:10px;
+}
+.separator-orange{
+    border-bottom: 2px solid #F2AC32;
+}
+
+/******************oracle*****************************************/
+.oracle-section{
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url("../images/oracle-back.jpg");    
+    background-size: cover;
+    text-align: center;
+    padding: 50px;
+}
+.oracle-h1{
+    font-family: 'Caveat', cursive;
+    color: #F2AC32; 
+    margin-bottom:15px;
+    font-size:40px;
+}
+.oracle-h2{
+    font-family: 'Oswald', sans-serif;
+    color:#fff;
+    margin-bottom: 50px;
+    font-size:50px;
+    letter-spacing: 2px;
+}
+.oracle{
+    
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+
+/******************oracle*****************************************/
+
+.razredi-section{
+    padding: 50px;
+    text-align:center;
+    background-color: #f0f0f0;
+}
+
+.razredi-h1{
+    font-family: 'Caveat', cursive;
+    color: #F2AC32; 
+    margin-bottom:15px;
+    font-size:40px;
+}
+
+.razredi-h2{
+    font-family: 'Oswald', sans-serif;
+    color:#000;
+    margin-bottom: 50px;
+    font-size:50px;
+    letter-spacing: 2px;
+}
+
+.razredi-row{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.razredi-div{
+    background-color: #fff;
+    margin:50px 15px;
+    font-family: 'Oswald', sans-serif;
+    
+}
+.razredi-icon{
+    padding:15px 20px;
+    display:inline-block;
+    border-right: 1px solid #f0f0f0;
+}
+.razredi-data{
+    padding-right:20px;
+    padding-left:20px;
+}
+.razredi-cta{
+    background-color: #F2AC32;
+    color:#fff;
+    text-decoration: none;
+    padding: 15px 50px;
+}
+
+/******************oracle*****************************************/
+
+footer{
+    padding:60px 0;
+    padding-bottom:0;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../images/oracle-back.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #f0f0f0;
+}
+.footer-row{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer-col{
+    margin: 30px 60px;
+}
+.footer-title{
+    font-family: 'Oswald', sans-serif;
+    color:#F2AC32;
+    margin-bottom:30px;
+}
+.footer-text{
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 10px;
+}
+.footer-email{
+    padding: 10px 22px;
+    width: 230px;
+    height:45px;
+    margin-bottom: 15px;
+}
+.footer-subscribe{
+    display: inline-block;
+    width:230px;
+    color:#fff;
+    text-decoration:none;
+    font-family: 'Oswald', sans-serif;
+    background-color: #F2AC32;
+    height:45px;
+    text-align:center;
+    line-height: 45px;
+
+}
+.copyright{
+    padding:40px;
+    color:#f0f0f0;
+    font-size: 14px;
+    text-align:center;
+    font-family: 'Oswald', sans-serif;
+    border-top: 1px solid rgba(240, 240, 240, 0.3);
+}
+.copyright-name{
+    color:#F2AC32;
+}
